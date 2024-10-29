@@ -1,6 +1,5 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Recipe, Comment
 
 # Create your views here.
-def my_foodblog(request):
-    return HttpResponse("Hello, FoodBlog!")
+

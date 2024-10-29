@@ -20,5 +20,5 @@ from foodblog.views import my_foodblog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('foodblog/', my_foodblog, name='foodblog'),
+    path("", include("foodblog.urls"), name="foodblogblog-urls"),
 ]
